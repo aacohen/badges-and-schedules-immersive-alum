@@ -18,3 +18,12 @@ speakers.each_with_index do |speaker,index|
 end
 return room_assign
 end
+
+def printer(speakers)
+batch_badge_creator(speakers).each do |speaker|
+  puts "#{speaker}"
+end
+assign_rooms(speakers).each do |room|
+  puts "#{room}"
+end
+end
